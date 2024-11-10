@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\inviteForm.html",
+      "PackagePath": "staticwebassets\\inviteForm.html"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\thnks.html",
+      "PackagePath": "staticwebassets\\thnks.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.hw_01.props",
+      "PackagePath": "build\\hw_01.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.hw_01.props",
+      "PackagePath": "buildMultiTargeting\\hw_01.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.hw_01.props",
+      "PackagePath": "buildTransitive\\hw_01.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.hw_01.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

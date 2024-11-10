@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "X75I4AwmH7EQQZTx+5ah8b0gn3EW0nadUG6+fAkuJv8=",
+  "Source": "hw_01",
+  "BasePath": "_content/hw_01",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "hw_01\\wwwroot",
+      "Source": "hw_01",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\",
+      "BasePath": "_content/hw_01",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\index.html",
+      "SourceId": "hw_01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\",
+      "BasePath": "_content/hw_01",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\inviteForm.html",
+      "SourceId": "hw_01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\",
+      "BasePath": "_content/hw_01",
+      "RelativePath": "inviteForm.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\inviteForm.html"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\thnks.html",
+      "SourceId": "hw_01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\",
+      "BasePath": "_content/hw_01",
+      "RelativePath": "thnks.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\thnks.html"
+    }
+  ]
+}
