@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Add_Upload_Download_Files.props" />
+</Project>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Add_Upload_Download_Files/1.0.0": {
+        "runtime": {
+          "Add_Upload_Download_Files.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Add_Upload_Download_Files/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
