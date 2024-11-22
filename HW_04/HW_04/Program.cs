@@ -158,8 +158,6 @@ app.MapGet("/users/{id}", async context =>
 
     }
 
-
-
 });
 
 
@@ -188,7 +186,7 @@ public class UserRepository : IUserRepository
         _users.Add(new User { Id = _idCounter++, Name = "Joe", Email = "joe@yahoo.com" });
         _users.Add(new User { Id = _idCounter++, Name = "Jimmy", Email = "jimmy@gmail.com" });
         _users.Add(new User { Id = _idCounter++, Name = "Jessica", Email = "jessica@ahoo.com" });
-        _users.Add(new User { Id = _idCounter++, Name = "Julia", Email = "jacob@gmail.com" });
+        _users.Add(new User { Id = _idCounter++, Name = "Julia", Email = "Julia@gmail.com" });
     }
 
     public void AddUser(User user)
