@@ -18,8 +18,10 @@ var app = builder.Build();
 
 app.MapGet("/", async context =>
 {
-    var repo = context.RequestServices.GetRequiredService<IUserRepository>();
-    var users = repo.GetAllUsers();
+    //var repos = app.Services.GetService<IUserRepository>();
+    var repos = context.RequestServices.GetRequiredService<IUserRepository>();
+
+    var users = repos.GetAllUsers();
 
     var html = HtmlGenerator.GenerateUsersPage(users);
 
