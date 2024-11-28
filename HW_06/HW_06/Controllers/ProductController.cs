@@ -15,15 +15,15 @@ namespace HW_06.Controllers
         }
 
         public async Task<IActionResult> Index([FromServices] ApplicationDbContext db)
-		{
-			return Json(await db.Products.ToListAsync());
-		}
+	{
+		return Json(await db.Products.ToListAsync());
+	}
 
-		[HttpGet]
-		public IActionResult Create()
-		{
-			return View();
-		}
+	[HttpGet]
+	public IActionResult Create()
+	{
+		return View();
+	}
 
         [HttpPost]
         public IActionResult Create(Product product)
