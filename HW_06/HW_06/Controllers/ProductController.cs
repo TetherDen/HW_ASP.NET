@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using System.Text.Json;
 
 namespace HW_06.Controllers
 {
@@ -59,9 +60,32 @@ namespace HW_06.Controllers
 
         // Get Тест ->
         // localhost:7196/product/delete?id=11
+
+        //[HttpPost]
+        //public async Task<IActionResult> Delete([FromBody] JsonElement id)         // В POST запросе черзе Postman всегда приходит int id = 0 почемуто.
+        //{
+        //    var product = await db.Products.FirstOrDefaultAsync(e => e.Id == id);
+
+        //    if (product == null)
+        //    {
+        //        return NotFound("Product not found");
+        //    }
+
+        //    db.Products.Remove(product);
+        //    db.SaveChangesAsync();
+
+        //    return Json(product);
+        //}
+
+
         [HttpPost]
-        public async Task<IActionResult> Delete(int id)         // В POST запросе черзе Postman всегда приходит int id = 0 почемуто.
+        public async Task<IActionResult> Delete([FromBody] JsonElement jsonElement)
         {
+            if (!jsonElement.TryGetProperty("id", out var idProperty) || !idProperty.TryGetInt32(out var id))
+            {
+                return BadRequest("Invalid or missing id");
+            }
+
             var product = await db.Products.FirstOrDefaultAsync(e => e.Id == id);
 
             if (product == null)
@@ -70,7 +94,7 @@ namespace HW_06.Controllers
             }
 
             db.Products.Remove(product);
-            db.SaveChangesAsync();
+            await db.SaveChangesAsync();
 
             return Json(product);
         }

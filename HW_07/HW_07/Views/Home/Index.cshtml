@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@{
+    Dictionary<string, decimal> currenciesRates = new()
+    {
+        { "USD", 1.0m },
+        { "UAH", 41.4m },
+        { "EUR", 0.93m },
+        { "BTC", 0.000010271474576859905m },
+        { "ETH", 0.0002698773817982699m },
+
+    };
+
+    decimal amount = 0;
+    string fromCurrency = "";
+    string toCurrency = "";
+    decimal result = 0;
+    string strAmount = "";
+
+    if(Context.Request.Method == HttpMethod.Post.Method)
+    {
+        strAmount = Context.Request.Form["amount"];
+        if (!string.IsNullOrEmpty(strAmount) && decimal.TryParse(strAmount, out amount))
+        {
+            fromCurrency = Context.Request.Form["fromCurrency"];
+            toCurrency = Context.Request.Form["toCurrency"];
+
+            if (currenciesRates.ContainsKey(fromCurrency) && currenciesRates.ContainsKey(toCurrency))
+            {
+                result = amount * (currenciesRates[toCurrency] / currenciesRates[fromCurrency]);
+            }
+        }
+    }
+
+}
+
+
+
+
+<h1>    My exchanger</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="amount">Enter Sum:</label>
+        <input type="number" id="amount" name="amount" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="fromCurrency">From Currency:</label>
+        <select id="fromCurrency" name="fromCurrency" class="form-control">
+            @foreach (var item in currenciesRates.Keys)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        <label for="toCurrency">To Currency:</label>
+        <select id="toCurrency" name="toCurrency" class="form-control">
+            @foreach (var item in currenciesRates.Keys)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+    </div>
+
+  <button type="submit" class="btn btn-primary">Convert</button>
+
+</form>
+
+@* <h2>Result: @result</h2> *@
+
+@if(result != 0)
+{
+    <div>
+        <h2>Result: </h2>
+        <p>@amount @fromCurrency = @result.ToString("f2") @toCurrency</p>
+    </div>
+}
+
+
+
+
+
+
