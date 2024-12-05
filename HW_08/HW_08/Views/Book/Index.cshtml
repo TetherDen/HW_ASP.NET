@@ -1,0 +1,51 @@
+﻿@using HW_08.VIewModel
+
+@{
+    ViewData["Title"] = "Books Page";
+}
+
+@model List<BookViewModel>
+
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+
+    tr:nth-child(odd) {
+        background-color: lightgray;
+    }
+
+    tr:nth-child(even) {
+        background-color: white;
+    }
+
+    tr:first-child {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+</style>
+
+
+    <table>
+        @foreach(var b in Model)
+        {
+            <tr>
+                <td>@b.Title</td>
+                <td>@b.Author</td>
+                <td>@b.Genre</td>
+                <td>@b.Year</td>
+            </tr>
+        }
+    </table>
+
+
+
+
+
