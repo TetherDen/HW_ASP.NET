@@ -1,0 +1,38 @@
+﻿.cosmic-header {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.cosmic-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color:midnightblue;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    animation: pulseAnimation 2s infinite;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    50% {
+        transform: scale(1.2);
+        text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+
+    100% {
+        transform: scale(1);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.cosmic-header {
+    background-color:black;
+}
