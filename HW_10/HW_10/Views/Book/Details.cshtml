@@ -1,0 +1,54 @@
+﻿@using HW_10.ViewModel
+
+@{
+    ViewData["Title"] = "Book Details Page";
+}
+
+@model BookDetailsViewModel
+
+
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Book?.Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@Model.Book?.Author</h6>
+            <p class="card-text">Genre: @Model.Book?.Genre</p>
+            <p class="card-text">Price: @Model.Book?.Price</p>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h2>Comments</h2>
+        <ul class="list-group">
+            @foreach (var comment in Model.Book?.Comments ?? new List<Comment>())
+            {
+                <li class="list-group-item">@comment.Text</li>
+            }
+        </ul>
+    </div>
+
+
+    <div class="mt-4">
+        <form asp-action="AddComment" method="post">
+            <input type="hidden" name="NewComment.BookId" value="@Model.Book?.Id" />
+            <div class="form-group">
+                <label for="commentText">Add a comment:</label>
+                <textarea class="form-control" id="commentText" name="NewComment.Text" rows="3"></textarea>
+                <span asp-validation-for="NewComment.Text" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Add Comment</button>
+        </form>
+    </div>
+
+
+</div>
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

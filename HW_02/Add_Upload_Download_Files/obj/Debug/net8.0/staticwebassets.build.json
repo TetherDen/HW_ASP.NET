@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IAeY9KFXovMoSw+LuatBjpSYmbA1weVW5iUjtx8vi1E=",
+  "Hash": "J0v3i61DL/NpIPbbLHwXo6fPJY8wrXV/W+nA74dLwrE=",
   "Source": "Add_Upload_Download_Files",
   "BasePath": "_content/Add_Upload_Download_Files",
   "Mode": "Default",
@@ -72,44 +72,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\9436.png"
-    },
-    {
-      "Identity": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\uploads\\Coollama.jpeg",
-      "SourceId": "Add_Upload_Download_Files",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\",
-      "BasePath": "_content/Add_Upload_Download_Files",
-      "RelativePath": "uploads/Coollama.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Coollama.jpeg"
-    },
-    {
-      "Identity": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\uploads\\test.rar",
-      "SourceId": "Add_Upload_Download_Files",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\",
-      "BasePath": "_content/Add_Upload_Download_Files",
-      "RelativePath": "uploads/test.rar",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\test.rar"
     }
   ]
 }

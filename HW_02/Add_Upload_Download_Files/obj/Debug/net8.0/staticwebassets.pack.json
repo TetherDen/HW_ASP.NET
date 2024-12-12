@@ -13,14 +13,6 @@
       "PackagePath": "staticwebassets\\uploads\\9436.png"
     },
     {
-      "Id": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\uploads\\Coollama.jpeg",
-      "PackagePath": "staticwebassets\\uploads\\Coollama.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\uploads\\test.rar",
-      "PackagePath": "staticwebassets\\uploads\\test.rar"
-    },
-    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Add_Upload_Download_Files.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
