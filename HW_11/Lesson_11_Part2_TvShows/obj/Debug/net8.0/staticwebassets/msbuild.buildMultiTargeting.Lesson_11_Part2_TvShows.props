@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Lesson_11_Part2_TvShows.props" />
+</Project>

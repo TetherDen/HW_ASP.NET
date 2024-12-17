@@ -1,0 +1,75 @@
+﻿@model Lesson_11_Part2_TvShows.Models.TvShow
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TvShow</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Titlle" class="control-label"></label>
+                <input asp-for="Titlle" class="form-control" />
+                <span asp-validation-for="Titlle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImdUrl" class="control-label"></label>
+                <input asp-for="ImdUrl" class="form-control" />
+                <span asp-validation-for="ImdUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label"></label>
+                <select asp-for="Genre" asp-items="Html.GetEnumSelectList<Genre>()" class="form-control"></select>
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Poster" class="control-label"></label>
+                <input asp-for="Poster" class="form-control" />
+                <span asp-validation-for="Poster" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        // Исправленная валидация чисел
+        $.validator.methods.number = function (value, element) {
+            // Преобразуем запятые в точки (для европейских форматов чисел)
+            var globalizedValue = value.replace(",", ".");
+            // Проверяем число, которое может быть как целым, так и дробным
+            return this.optional(element) || /^-?\d+(\.\d+)?$/.test(globalizedValue);
+        }
+
+        // Исправленная валидация диапазона
+        $.validator.methods.range = function (value, element, param) {
+            // Преобразуем запятую в точку, если она есть
+            var globalizedValue = value.replace(",", ".");
+            // Проверяем, что значение входит в указанный диапазон
+            return this.optional(element) || (parseFloat(globalizedValue) >= param[0] && parseFloat(globalizedValue) <= param[1]);
+        }
+    </script>
+}

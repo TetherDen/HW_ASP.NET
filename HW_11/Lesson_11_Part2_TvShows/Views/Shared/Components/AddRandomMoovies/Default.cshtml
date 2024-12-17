@@ -1,0 +1,26 @@
+﻿
+@model IEnumerable<TvShow>
+
+<div style="margin-top: 10vw;">
+    <hr class="my-4">
+    <h3>5 Random Moovies Same Genre</h3>
+</div>
+
+<div class="row">
+    @foreach (var tvShow in Model)
+    {
+        <div class="col-md-3">
+            <div class="card">
+                @if (!string.IsNullOrEmpty(tvShow.Poster))
+                {
+                    <img class="card-img-top" src="@Url.Content(tvShow.Poster)" alt="@tvShow.Titlle" />
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@tvShow.Titlle</h5>
+                    <p class="card-text">Rating: @tvShow.Rating</p>
+                    <a href="@tvShow.ImdUrl" class="btn btn-primary" target="_blank">View on IMDb</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

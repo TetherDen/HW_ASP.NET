@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Genre>
+
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Genres</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" asp-controller="TvShows" asp-action="Index">All Genres</a>
+        </li>
+        @foreach (var genre in Model)
+        {
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="TvShows" asp-action="ByGenre" asp-route-genre="@genre">@genre</a>
+            </li>
+        }
+    </ul>
+</nav>
