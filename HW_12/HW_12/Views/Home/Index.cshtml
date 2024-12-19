@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    string bg = ViewData["bgColor"] as string ?? "white";
+}
+
+@model List<News>
+
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 30px;">
+    <p>Settings</p>
+
+    <form asp-action="SaveSettings" method="post">
+    <label>Background:</label>
+        <select name="backgroundColor" id="ColorSelect">
+            <option value="">select color</option>
+            <option value="white">white</option>
+            <option value="black">black</option>
+            <option value="lightgray">light-gray</option>
+            <option value="darkgray">dark-gray</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+
+</div>
+
+
+<h3>hawbowdah</h3>
+@foreach (var news in Model)
+{
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 30px;">
+        <div style="font-weight: bold;"> @news.Title</div>
+        <hr />
+        <div>@news.Text</div>
+    </div>
+}
+
+<script>
+    document.body.style.backgroundColor = "@bg";
+
+    document.getElementById('ColorSelect').value = '@bg';
+</script>

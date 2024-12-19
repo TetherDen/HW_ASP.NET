@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lesson_11_Part2_TvShows")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75e73fa81b5ea8f27f496e1112c77463d29d052e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25f971c523c2ff5984540f982ae178dd8ac724e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lesson_11_Part2_TvShows")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lesson_11_Part2_TvShows")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
