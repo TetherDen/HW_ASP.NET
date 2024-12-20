@@ -1,0 +1,42 @@
+﻿
+@using HW_13.ViewModel
+
+@model RegisterViewModel
+
+
+<div class="text-center">
+    <h2>Registration</h2>
+    <form asp-antiforgery="true" asp-action="Register" method="post">
+
+        <div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div>
+                <label asp-for="Email"></label><br />
+                <input type="text" asp-for="Email" />
+                <br />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="Password"></label><br />
+                <input type="password" asp-for="Password" />
+                <br />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="ConfirmPassword"></label><br />
+                <input type="password" asp-for="ConfirmPassword" />
+                <br />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <input type="submit" value="Register" />
+        </div>
+
+
+    </form>
+</div>
+
+

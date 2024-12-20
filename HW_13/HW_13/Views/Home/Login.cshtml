@@ -1,0 +1,39 @@
+﻿@using HW_13.ViewModel
+
+@{
+    ViewData["Title"] = "login Page";
+}
+
+@model LoginViewModel
+
+
+<div class="text-center">
+    <h2>Login to your ACcount</h2>
+    <form asp-antiforgery="true" asp-action="Login" method="post">
+        <div>
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div>
+                <label asp-for="Email"></label><br />
+                <input type="text" asp-for="Email" />
+                <br />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="Password"></label><br />
+                <input type="password" asp-for="Password" />
+                <br />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <input type="submit" value="Login" />
+        </div>
+
+    </form>
+
+    <div>
+        <p>Dont have an account? <a asp-controller="Home" asp-action="Register">Register here</a></p>
+    </div>
+</div>
+
