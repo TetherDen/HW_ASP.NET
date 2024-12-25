@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@model List<Currency>
+
+@{
+    var currentCurrency = Context.Items["currency"] as string;
+}
+
+
+<div class="text-center">
+    <br />
+    <h4 class="display-6">Current Currency: @currentCurrency</h4>
+
+    <form asp-action="SaveCurrency" method="post">
+        <label>Currency:</label>
+        <select name="selectedCurrency">
+            <option value="">Choose Currency</option>
+            @foreach (var currency in Model)
+            {
+                @* <option value="@currency.Name">@currency.Name</option> *@
+                if (currency.Name == currentCurrency)
+                {
+                    <option value="@currency.Name" selected>@currency.Name</option>
+                }
+                else
+                {
+                    <option value="@currency.Name">@currency.Name</option>
+                }
+            }
+        </select>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+
+
