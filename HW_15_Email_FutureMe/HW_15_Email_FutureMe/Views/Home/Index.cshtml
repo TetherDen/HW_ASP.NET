@@ -1,0 +1,52 @@
+﻿@using HW_15_Email_FutureMe.ViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+    // Layout = null;
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form asp-controller="Home" asp-action="GetFiles" method="post" enctype="multipart/form-data">
+        <input type="file" name="uploads" />
+        <input type="file" name="uploads" />
+        <input type="submit" value="Send" />
+    </form>
+</div> *@
+
+
+
+@model EmailFormModel
+
+<form asp-action="SendEmailWithFiles" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Subject" class="control-label"></label>
+        <input asp-for="Subject" class="form-control" />
+        <span asp-validation-for="Subject" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Content" class="control-label"></label>
+        <textarea asp-for="Content" class="form-control"></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Attachments" class="control-label">Выберите файлы для отправки:</label>
+        <input asp-for="Attachments" type="file" class="form-control" multiple />
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+
+

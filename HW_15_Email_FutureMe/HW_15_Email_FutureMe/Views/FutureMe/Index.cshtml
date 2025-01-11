@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Future Letter";
+}
+
+@model FutureLetter
+
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success mb-4">
+                    @TempData["Success"]
+                </div>
+            }
+
+            <div class="card">
+                <div class="card-header text-center">
+                    <h1 class="h3">Write a letter to your future self</h1>
+                    <p class="text-muted">Write. Pick a receiving date. Send. That's it! 😊</p>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="FutureMe" asp-action="SendLetter" method="post">
+                        <div class="mb-3">
+                            <label asp-for="UserEmail" class="form-label">Your Email</label>
+                            <input asp-for="UserEmail" type="text" class="form-control">
+                            <span asp-validation-for="UserEmail" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Content" class="form-label">Letter Content</label>
+                            <textarea asp-for="Content" class="form-control" rows="6"
+                                        placeholder="Dear FutureMe..."></textarea>
+                            <span asp-validation-for="Content" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">When to deliver?</label>
+                            <div class="d-flex gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="deliveryPeriod"
+                                            value="6m" checked>
+                                    <label class="form-check-label">6 months</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="deliveryPeriod"
+                                            value="1y">
+                                    <label class="form-check-label">1 year</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="deliveryPeriod"
+                                            value="3y">
+                                    <label class="form-check-label">3 years</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="deliveryPeriod" value="5y">
+                                    <label class="form-check-label">5 years</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="deliveryPeriod" value="10y">
+                                    <label class="form-check-label">10 years</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="deliveryPeriod" value="today">
+                                    <label class="form-check-label">Today</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Send to the Future</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

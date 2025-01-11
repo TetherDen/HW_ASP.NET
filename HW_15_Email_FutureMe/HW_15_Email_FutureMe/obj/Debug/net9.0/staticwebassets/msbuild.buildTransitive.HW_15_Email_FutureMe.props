@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\HW_15_Email_FutureMe.props" />
+</Project>
