@@ -1,0 +1,52 @@
+﻿.recommended-publications {
+    max-width: 300px;
+    width: 100%;
+}
+
+    .recommended-publications .card-body {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+.publication-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.publication-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.publication-content {
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.publication-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.publication-categories {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
+.publication-btn {
+    flex-shrink: 0;
+}
+
+@media (max-width: 300px) {
+    .publication-title,
+    .publication-categories {
+        max-width: 100px;
+    }
+}

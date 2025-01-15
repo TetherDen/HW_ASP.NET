@@ -20,6 +20,10 @@ builder.Services.AddSingleton(emailConfig);
 
 builder.Services.AddScoped<IEmailSender, EmailSend>();
 
+//  Мы используем класс BodyBuilder для создания тела письма, добавляем файлы вложений, 
+//  преобразуя их в байтовые массивы, и добавляем их в Attachments. 
+//  Конфигурация FormOptions устанавливает максимальные лимиты для обработки больших данных и файлов.
+//  В Конспекте подробнее...
 builder.Services.Configure<FormOptions>(o => {
     o.ValueLengthLimit = int.MaxValue;
     o.MultipartBodyLengthLimit = int.MaxValue;

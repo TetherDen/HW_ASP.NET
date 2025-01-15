@@ -1,0 +1,39 @@
+﻿@model List<Publication>
+
+<div class="card recommended-publications">
+    <div class="card-header">Случайные публикации</div>
+    <div class="card-body p-2">
+        <div class="row g-2">
+            @foreach (var publication in Model)
+            {
+                <div class="col-12">
+                    <div class="d-flex align-items-center border rounded p-2 publication-item">
+                        @if (publication.Image != null)
+                        {
+                            <img src="@publication.Image" alt="@publication.Title" 
+                                 class="publication-image me-2">
+                        }
+                        <div class="publication-content flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h6 class="publication-title mb-1">@publication.Title</h6>
+@*                                 <small class="text-muted">
+                                    <i class="bi bi-eye-fill me-1"></i>@publication.TotalViews
+                                </small> *@
+                            </div>
+                            <small class="text-muted publication-categories">
+                                @String.Join(", ", publication.Categories.Select(e => e.Name))
+                            </small>
+                        </div>
+                        <a href="@Url.Action("GetPublication", "Home", new { id = publication.Id })" 
+                           class="btn btn-sm btn-outline-secondary publication-btn">
+                            Читать
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Там css стили для этого частичного представления-->
+<link rel="stylesheet" href="~/css/recommended-publications.css" />
