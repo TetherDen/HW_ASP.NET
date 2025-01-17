@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X75I4AwmH7EQQZTx+5ah8b0gn3EW0nadUG6+fAkuJv8=",
+  "Hash": "yEAHb1IoATzgHjBkUuxU8XmTVH3IzwYOzUu8/PlQSD0=",
   "Source": "hw_01",
   "BasePath": "_content/hw_01",
   "Mode": "Default",
@@ -22,15 +22,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\",
       "BasePath": "_content/hw_01",
-      "RelativePath": "index.html",
+      "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "5aqnrw59sn",
+      "Integrity": "MxAjUxEp+dLdF8yZTrb6ukVP+FtWHDg5qHF6sy9aY6s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -41,15 +43,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\",
       "BasePath": "_content/hw_01",
-      "RelativePath": "inviteForm.html",
+      "RelativePath": "inviteForm#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "1pf3oq4ydm",
+      "Integrity": "yw0cdW3Wkjf2fR8DTxA06GKKeYXMII6nhqfXoXkztmU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\inviteForm.html"
@@ -60,18 +64,268 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\",
       "BasePath": "_content/hw_01",
-      "RelativePath": "thnks.html",
+      "RelativePath": "thnks#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "64pda25uwm",
+      "Integrity": "mt0hupX31Wn3rwcEmC3bD8w5m833fooIWbpLS3R3XfM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\thnks.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.5aqnrw59sn.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "268"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MxAjUxEp+dLdF8yZTrb6ukVP+FtWHDg5qHF6sy9aY6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 Nov 2024 13:52:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5aqnrw59sn"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MxAjUxEp+dLdF8yZTrb6ukVP+FtWHDg5qHF6sy9aY6s="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "268"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MxAjUxEp+dLdF8yZTrb6ukVP+FtWHDg5qHF6sy9aY6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 Nov 2024 13:52:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MxAjUxEp+dLdF8yZTrb6ukVP+FtWHDg5qHF6sy9aY6s="
+        }
+      ]
+    },
+    {
+      "Route": "inviteForm.1pf3oq4ydm.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\inviteForm.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "556"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yw0cdW3Wkjf2fR8DTxA06GKKeYXMII6nhqfXoXkztmU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 Nov 2024 14:32:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1pf3oq4ydm"
+        },
+        {
+          "Name": "label",
+          "Value": "inviteForm.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yw0cdW3Wkjf2fR8DTxA06GKKeYXMII6nhqfXoXkztmU="
+        }
+      ]
+    },
+    {
+      "Route": "inviteForm.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\inviteForm.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "556"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yw0cdW3Wkjf2fR8DTxA06GKKeYXMII6nhqfXoXkztmU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 Nov 2024 14:32:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yw0cdW3Wkjf2fR8DTxA06GKKeYXMII6nhqfXoXkztmU="
+        }
+      ]
+    },
+    {
+      "Route": "thnks.64pda25uwm.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\thnks.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mt0hupX31Wn3rwcEmC3bD8w5m833fooIWbpLS3R3XfM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 Nov 2024 13:53:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "64pda25uwm"
+        },
+        {
+          "Name": "label",
+          "Value": "thnks.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mt0hupX31Wn3rwcEmC3bD8w5m833fooIWbpLS3R3XfM="
+        }
+      ]
+    },
+    {
+      "Route": "thnks.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_01\\hw_01\\wwwroot\\thnks.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mt0hupX31Wn3rwcEmC3bD8w5m833fooIWbpLS3R3XfM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 Nov 2024 13:53:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mt0hupX31Wn3rwcEmC3bD8w5m833fooIWbpLS3R3XfM="
+        }
+      ]
     }
   ]
 }

@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "rMdW7xkei9/ZJsicEAmhEhZyx89WQsQKAbYaD42VV88=",
+  "Hash": "TTVUw79povdxzQZD7X0oHrdcUuA++Tggz8W00OQ8sQY=",
   "Source": "HW_05",
   "BasePath": "_content/HW_05",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

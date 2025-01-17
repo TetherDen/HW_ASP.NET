@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_12\\HW_12\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HW_12.bundle.scp.css",
-      "PackagePath": "staticwebassets\\HW_12.bundle.scp.css"
+      "PackagePath": "staticwebassets\\HW_12.jt5qk3myno.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_12\\HW_12\\wwwroot\\css\\site.css",
@@ -243,6 +243,10 @@
     {
       "Id": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_12\\HW_12\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HW_12.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HW_12.Microsoft.AspNetCore.StaticWebAssets.props",

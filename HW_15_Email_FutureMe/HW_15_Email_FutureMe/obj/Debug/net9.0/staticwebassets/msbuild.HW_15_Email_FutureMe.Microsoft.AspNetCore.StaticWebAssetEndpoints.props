@@ -28,13 +28,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HW_15_Email_FutureMe.lurmzuizi7.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fVFQO7BmkJRLint38Mnscrr8MQkR9Vm7\u002Biqz\u002Byg8Skk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1138"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fVFQO7BmkJRLint38Mnscrr8MQkR9Vm7\u002Biqz\u002Byg8Skk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 17:46:16 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1138"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fVFQO7BmkJRLint38Mnscrr8MQkR9Vm7\u002Biqz\u002Byg8Skk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 16 Jan 2025 17:07:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HW_15_Email_FutureMe/HW_15_Email_FutureMe.lurmzuizi7.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HW_15_Email_FutureMe.lurmzuizi7.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lurmzuizi7"},{"Name":"integrity","Value":"sha256-fVFQO7BmkJRLint38Mnscrr8MQkR9Vm7\u002Biqz\u002Byg8Skk="},{"Name":"label","Value":"_content/HW_15_Email_FutureMe/HW_15_Email_FutureMe.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1138"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fVFQO7BmkJRLint38Mnscrr8MQkR9Vm7\u002Biqz\u002Byg8Skk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 17:46:16 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1138"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fVFQO7BmkJRLint38Mnscrr8MQkR9Vm7\u002Biqz\u002Byg8Skk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 16 Jan 2025 17:07:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HW_15_Email_FutureMe/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

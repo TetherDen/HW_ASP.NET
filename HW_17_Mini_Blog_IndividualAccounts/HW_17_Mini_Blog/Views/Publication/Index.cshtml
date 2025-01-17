@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Publication>
+
+@{
+    ViewData["Title"] = "All Publications";
+}
+
+<h1 class="text-center my-4">All Publications</h1>
+
+<div class="container">
+    <div class="row">
+        @foreach (var publication in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@publication.Title</h5>
+                        <h6 class="card-subtitle text-muted mb-2">
+                            Published: @publication.CreatedAt
+                        </h6>
+                        <p class="card-text text-truncate" style="max-height: 4.5em; overflow: hidden;">
+                            @publication.Description
+                        </p>
+
+                        <a href="@Url.Action("GetPublication", "Publication", new { id = publication.Id })" class="btn btn-primary">Read</a>
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

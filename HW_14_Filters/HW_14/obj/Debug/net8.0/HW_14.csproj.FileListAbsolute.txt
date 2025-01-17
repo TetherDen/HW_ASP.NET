@@ -85,3 +85,7 @@ C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_14_Filters\HW_14\bin\Debug\n
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_14_Filters\HW_14\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_14_Filters\HW_14\obj\Debug\net8.0\HW_14.csproj.AssemblyReference.cache
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_14_Filters\HW_14\obj\Debug\net8.0\HW_14.csproj.Up2Date
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_14_Filters\HW_14\bin\Debug\net8.0\HW_14.staticwebassets.endpoints.json
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_14_Filters\HW_14\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_14_Filters\HW_14\obj\Debug\net8.0\staticwebassets\msbuild.HW_14.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_14_Filters\HW_14\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

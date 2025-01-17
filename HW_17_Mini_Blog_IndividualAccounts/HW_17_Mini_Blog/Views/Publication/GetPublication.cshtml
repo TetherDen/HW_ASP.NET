@@ -1,0 +1,15 @@
+﻿@model Publication
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h1 class="card-title">@Model.Title</h1>
+            <h6 class="card-subtitle text-muted mb-3">
+                Published: @Model.CreatedAt
+            </h6>
+            <div class="card-text">
+                @Html.Raw(Model.Content)   <!-- выводит хтмл  контент-->
+            </div>
+        </div>
+    </div>
+</div>

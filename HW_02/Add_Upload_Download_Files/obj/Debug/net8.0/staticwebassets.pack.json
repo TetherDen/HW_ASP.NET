@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\uploads\\9436.png"
     },
     {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Add_Upload_Download_Files.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Add_Upload_Download_Files.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

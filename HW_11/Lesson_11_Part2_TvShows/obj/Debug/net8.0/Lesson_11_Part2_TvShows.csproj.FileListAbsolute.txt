@@ -551,3 +551,7 @@ C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_11\Lesson_11_Part2_TvShows\o
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_11\Lesson_11_Part2_TvShows\obj\Debug\net8.0\Lesson_11_Part2_TvShows.pdb
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_11\Lesson_11_Part2_TvShows\obj\Debug\net8.0\Lesson_11_Part2_TvShows.genruntimeconfig.cache
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_11\Lesson_11_Part2_TvShows\obj\Debug\net8.0\ref\Lesson_11_Part2_TvShows.dll
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_11\Lesson_11_Part2_TvShows\bin\Debug\net8.0\Lesson_11_Part2_TvShows.staticwebassets.endpoints.json
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_11\Lesson_11_Part2_TvShows\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_11\Lesson_11_Part2_TvShows\obj\Debug\net8.0\staticwebassets\msbuild.Lesson_11_Part2_TvShows.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_11\Lesson_11_Part2_TvShows\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_09\\HW_09\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HW_09.bundle.scp.css",
-      "PackagePath": "staticwebassets\\HW_09.bundle.scp.css"
+      "PackagePath": "staticwebassets\\HW_09.ydhfgm8ktb.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_09\\HW_09\\wwwroot\\css\\cosmicHeader.css",
@@ -247,6 +247,10 @@
     {
       "Id": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_09\\HW_09\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HW_09.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HW_09.Microsoft.AspNetCore.StaticWebAssets.props",

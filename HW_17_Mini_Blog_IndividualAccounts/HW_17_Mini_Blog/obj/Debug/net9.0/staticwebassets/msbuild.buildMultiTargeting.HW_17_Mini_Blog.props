@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HW_17_Mini_Blog.props" />
+</Project>

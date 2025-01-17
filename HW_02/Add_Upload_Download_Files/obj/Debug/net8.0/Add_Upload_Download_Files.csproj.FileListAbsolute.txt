@@ -25,3 +25,7 @@ C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_02\Add_Upload_Download_Files
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_02\Add_Upload_Download_Files\obj\Debug\net8.0\Add_Upload_Download_Files.genruntimeconfig.cache
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_02\Add_Upload_Download_Files\obj\Debug\net8.0\ref\Add_Upload_Download_Files.dll
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_02\Add_Upload_Download_Files\bin\Debug\net8.0\Add_Upload_Download_Files.staticwebassets.runtime.json
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_02\Add_Upload_Download_Files\bin\Debug\net8.0\Add_Upload_Download_Files.staticwebassets.endpoints.json
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_02\Add_Upload_Download_Files\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_02\Add_Upload_Download_Files\obj\Debug\net8.0\staticwebassets\msbuild.Add_Upload_Download_Files.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_02\Add_Upload_Download_Files\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J0v3i61DL/NpIPbbLHwXo6fPJY8wrXV/W+nA74dLwrE=",
+  "Hash": "f9dBr4mF3noHNJ1IdlIu3931Dfm4MfGwn3mq29BC2aM=",
   "Source": "Add_Upload_Download_Files",
   "BasePath": "_content/Add_Upload_Download_Files",
   "Mode": "Default",
@@ -22,15 +22,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\",
       "BasePath": "_content/Add_Upload_Download_Files",
-      "RelativePath": "html/index.html",
+      "RelativePath": "html/index#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "zbwzzd5dt4",
+      "Integrity": "kYoZsUP9Fb/CTVC4jLUuVBA2FpZDT8ZUPe5XZ8hpByE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\index.html"
@@ -41,15 +43,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\",
       "BasePath": "_content/Add_Upload_Download_Files",
-      "RelativePath": "uploads/333.pdf",
+      "RelativePath": "uploads/333#[.{fingerprint}]?.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "7okv3uz8az",
+      "Integrity": "mTo2Oivdgjvf/vZcvvAP0DivlRx/eBGP8BFxeBx+FqU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\333.pdf"
@@ -60,18 +64,268 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\",
       "BasePath": "_content/Add_Upload_Download_Files",
-      "RelativePath": "uploads/9436.png",
+      "RelativePath": "uploads/9436#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "iag9rm6oye",
+      "Integrity": "ui0PRhFnjM5wd7GpqFcJvmAJ4XDbJOQSBS8ATX9ggrI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\9436.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "html/index.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\html\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kYoZsUP9Fb/CTVC4jLUuVBA2FpZDT8ZUPe5XZ8hpByE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 14:26:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kYoZsUP9Fb/CTVC4jLUuVBA2FpZDT8ZUPe5XZ8hpByE="
+        }
+      ]
+    },
+    {
+      "Route": "html/index.zbwzzd5dt4.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\html\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kYoZsUP9Fb/CTVC4jLUuVBA2FpZDT8ZUPe5XZ8hpByE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 14:26:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zbwzzd5dt4"
+        },
+        {
+          "Name": "label",
+          "Value": "html/index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kYoZsUP9Fb/CTVC4jLUuVBA2FpZDT8ZUPe5XZ8hpByE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/333.7okv3uz8az.pdf",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\uploads\\333.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1420613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mTo2Oivdgjvf/vZcvvAP0DivlRx/eBGP8BFxeBx+FqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 11:58:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7okv3uz8az"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/333.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mTo2Oivdgjvf/vZcvvAP0DivlRx/eBGP8BFxeBx+FqU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/333.pdf",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\uploads\\333.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1420613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mTo2Oivdgjvf/vZcvvAP0DivlRx/eBGP8BFxeBx+FqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 11:58:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mTo2Oivdgjvf/vZcvvAP0DivlRx/eBGP8BFxeBx+FqU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9436.iag9rm6oye.png",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\uploads\\9436.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37560"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ui0PRhFnjM5wd7GpqFcJvmAJ4XDbJOQSBS8ATX9ggrI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 19:34:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iag9rm6oye"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9436.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ui0PRhFnjM5wd7GpqFcJvmAJ4XDbJOQSBS8ATX9ggrI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9436.png",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_02\\Add_Upload_Download_Files\\wwwroot\\uploads\\9436.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37560"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ui0PRhFnjM5wd7GpqFcJvmAJ4XDbJOQSBS8ATX9ggrI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Nov 2024 19:34:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ui0PRhFnjM5wd7GpqFcJvmAJ4XDbJOQSBS8ATX9ggrI="
+        }
+      ]
     }
   ]
 }

@@ -161,3 +161,7 @@ C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_05\HW_05\obj\Debug\net8.0\re
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_05\HW_05\obj\Debug\net8.0\HW_05.pdb
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_05\HW_05\obj\Debug\net8.0\HW_05.genruntimeconfig.cache
 C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_05\HW_05\obj\Debug\net8.0\ref\HW_05.dll
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_05\HW_05\bin\Debug\net8.0\HW_05.staticwebassets.endpoints.json
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_05\HW_05\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_05\HW_05\obj\Debug\net8.0\staticwebassets\msbuild.HW_05.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_05\HW_05\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

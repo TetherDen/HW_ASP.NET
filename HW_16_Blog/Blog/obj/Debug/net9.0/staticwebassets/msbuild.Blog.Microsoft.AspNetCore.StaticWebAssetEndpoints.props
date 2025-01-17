@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Blog.gr0gw98mh5.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JLRZSSXkgnDYyJ\u002B83WLhQwxvv\u002B2XFkBwg2Ioyk9/WPU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1122"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JLRZSSXkgnDYyJ\u002B83WLhQwxvv\u002B2XFkBwg2Ioyk9/WPU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 08 Jan 2025 17:02:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1122"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JLRZSSXkgnDYyJ\u002B83WLhQwxvv\u002B2XFkBwg2Ioyk9/WPU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 16 Jan 2025 17:07:25 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Blog/Blog.gr0gw98mh5.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Blog.gr0gw98mh5.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gr0gw98mh5"},{"Name":"integrity","Value":"sha256-JLRZSSXkgnDYyJ\u002B83WLhQwxvv\u002B2XFkBwg2Ioyk9/WPU="},{"Name":"label","Value":"_content/Blog/Blog.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1122"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JLRZSSXkgnDYyJ\u002B83WLhQwxvv\u002B2XFkBwg2Ioyk9/WPU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 08 Jan 2025 17:02:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1122"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JLRZSSXkgnDYyJ\u002B83WLhQwxvv\u002B2XFkBwg2Ioyk9/WPU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 16 Jan 2025 17:07:25 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Blog/css/froala/froala_editor.biv54wde8c.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\froala\froala_editor.css'))</AssetFile>
