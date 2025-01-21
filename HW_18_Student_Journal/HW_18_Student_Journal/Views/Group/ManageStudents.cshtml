@@ -1,0 +1,134 @@
+﻿@using HW_18_Student_Journal.ViewModel
+@model ManageStudentsViewModel
+
+<div class="container py-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h2 class="mb-0">Managing Group: @Model.GroupName</h2>
+        </div>
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show m-3" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                @TempData["ErrorMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show m-3" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                @TempData["SuccessMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        <div class="card-body">
+            <!-- Current Students Section -->
+            <div class="mb-4">
+                <h3 class="text-primary mb-3">
+                    <i class="bi bi-people-fill me-2"></i>Current Students
+                </h3>
+                @if (Model.StudentsInGroup.Any())
+                {
+                    <div class="list-group">
+                        @foreach (var student in Model.StudentsInGroup)
+                        {
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="bi bi-person me-2"></i>
+                                    @student.FirstName @student.LastName
+                                </div>
+                                <a asp-action="RemoveStudent"
+                                   asp-controller="Group"
+                                   asp-route-groupId="@Model.GroupId"
+                                   asp-route-studentId="@student.Id"
+                                   class="btn btn-outline-danger btn-sm"
+                                   onclick="return confirm('Are you sure you want to remove this student?');">
+                                    <i class="bi bi-trash me-1"></i>Remove
+                                </a>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-info">
+                        <i class="bi bi-info-circle me-2"></i>No students in the group.
+                    </div>
+                }
+            </div>
+
+            <!-- Add Students Section -->
+            <div class="mt-4">
+                <h3 class="text-primary mb-3">
+                    <i class="bi bi-person-plus-fill me-2"></i>Add Students
+                </h3>
+                <form asp-action="AddStudents" asp-controller="Group" method="post">
+                    <input type="hidden" asp-for="GroupId" />
+
+                    <div class="form-group mb-3">
+                        <select name="studentIds"
+                                multiple
+                                class="form-select"
+                                size="6"
+                                aria-label="Select students to add">
+                            @foreach (var student in Model.AvailableStudents)
+                            {
+                                <option value="@student.Id">
+                                    @($"{student.FirstName} {student.LastName}  -    {student.Email}")
+                                </option>
+                            }
+                        </select>
+
+                        <div class="form-text text-muted">
+                            Hold Ctrl (Cmd on Mac) to select multiple students
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button type="submit" class="btn btn-success">
+                            <i class="bi bi-plus-circle me-2"></i>Add Selected Students
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card-footer text-end">
+            <a asp-controller="Group"
+               asp-action="Index"
+               class="btn btn-secondary">
+                <i class="bi bi-arrow-left me-2"></i>Back to Groups
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 8px;
+    }
+
+    .list-group-item {
+        transition: background-color 0.2s ease;
+    }
+
+        .list-group-item:hover {
+            background-color: #f8f9fa;
+        }
+
+    .form-select {
+        border-radius: 6px;
+    }
+
+    .btn {
+        border-radius: 6px;
+    }
+
+    .alert {
+        border-radius: 6px;
+    }
+</style>

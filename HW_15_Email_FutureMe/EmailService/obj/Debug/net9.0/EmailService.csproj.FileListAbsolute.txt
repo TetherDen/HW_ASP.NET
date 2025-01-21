@@ -1,0 +1,12 @@
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\bin\Debug\net9.0\EmailService.deps.json
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\bin\Debug\net9.0\EmailService.dll
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\bin\Debug\net9.0\EmailService.pdb
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\obj\Debug\net9.0\EmailService.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\obj\Debug\net9.0\EmailService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\obj\Debug\net9.0\EmailService.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\obj\Debug\net9.0\EmailService.AssemblyInfo.cs
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\obj\Debug\net9.0\EmailService.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\obj\Debug\net9.0\EmailService.dll
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\obj\Debug\net9.0\refint\EmailService.dll
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\obj\Debug\net9.0\EmailService.pdb
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\EmailService\obj\Debug\net9.0\ref\EmailService.dll

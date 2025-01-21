@@ -13,6 +13,7 @@ namespace HW_17_Mini_Blog.Repository
             _context = context;
         }
 
+
         public async Task<IEnumerable<Publication>> GetAllPublicationsAsync()
         {
             return await _context.Publications.ToListAsync();
@@ -23,7 +24,6 @@ namespace HW_17_Mini_Blog.Repository
             await _context.Publications.AddAsync(publication);
             await _context.SaveChangesAsync();
         }
-
 
         public async Task<IEnumerable<Publication>> GetPublicationsByUserAsync(string userId)
         {

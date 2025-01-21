@@ -1,0 +1,37 @@
+﻿@using HW_18_Student_Journal.ViewModel
+@model ManageSubjectsViewModel
+
+<h2>@Model.GroupName - Manage Subjects</h2>
+
+<h3>Available Subjects</h3>
+<ul>
+    @foreach (var subject in Model.AvailableSubjects)
+    {
+        <li>
+            @subject.Name
+            <form method="post" asp-action="AddSubjectToGroup" asp-route-groupId="@Model.GroupId" asp-route-subjectId="@subject.Id">
+                <button type="submit" class="btn btn-primary btn-sm">Add</button>
+            </form>
+        </li>
+    }
+</ul>
+
+<h3>Assigned Subjects</h3>
+<ul>
+    @foreach (var subject in Model.AssignedSubjects)
+    {
+        <li>
+            @subject.Name
+            <form method="post" asp-action="RemoveSubjectFromGroup" asp-route-groupId="@Model.GroupId" asp-route-subjectId="@subject.Id">
+                <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+            </form>
+        </li>
+    }
+</ul>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}

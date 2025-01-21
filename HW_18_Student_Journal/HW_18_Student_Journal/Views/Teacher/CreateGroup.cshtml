@@ -1,0 +1,48 @@
+﻿@using HW_18_Student_Journal.ViewModel
+@model CreateGroupViewModel
+
+@{
+    ViewData["Title"] = "Create New Group";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4 class="mb-0">Add New Group</h4>
+                </div>
+
+                <div class="card-body p-4">
+
+                    <form asp-action="CreateGroup" method="post">
+                        <div class="form-group mb-3">
+                            <label asp-for="Name" class="form-label">Group Name:</label>
+                            <input asp-for="Name" class="form-control form-control-lg" id="Name" placeholder="Enter group name" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+
+                            <button type="submit" class="btn btn-lg px-5" style="background-color: #3654ff; color: white;">Add Group</button>
+
+
+                            <a asp-action="Index" asp-controller="Group" class="btn btn-outline-secondary btn-lg px-5">Cancel</a>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

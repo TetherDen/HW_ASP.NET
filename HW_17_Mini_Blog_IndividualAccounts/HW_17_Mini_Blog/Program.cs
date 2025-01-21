@@ -40,6 +40,9 @@ builder.Services.AddTransient<IPublication, PublicationRepository>();
 //5) Создайте страницу профиля пользователя, на которой отображается информация о пользователе и список его опубликованных статей. Информация о пользователя должна быть редактируемой.
 
 
+
+
+
 var app = builder.Build();
 
 app.UseHttpsRedirection();

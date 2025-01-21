@@ -1,0 +1,178 @@
+﻿@using HW_18_Student_Journal.ViewModel
+@model ProfileViewModel
+<div class="profile-container">
+    <div class="profile-header">
+        <h2>Edit Profile</h2>
+    </div>
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger">
+            <ul>
+                @foreach (var modelError in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <li>@modelError.ErrorMessage</li>
+                }
+            </ul>
+        </div>
+    }
+    <div class="form-container">
+        <form asp-action="EditProfile" method="post">
+            <div class="profile-field">
+                <label asp-for="FirstName">First Name:</label>
+                <input asp-for="FirstName" class="form-input" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="profile-field">
+                <label asp-for="LastName">Last Name:</label>
+                <input asp-for="LastName" class="form-input" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="profile-field">
+                <label asp-for="Email">Email:</label>
+                <input asp-for="Email" class="form-input" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="profile-field">
+                <label asp-for="PhoneNumber">Phone Number:</label>
+                <input asp-for="PhoneNumber" class="form-input" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+
+
+
+            <div class="button-group">
+                <button type="submit" class="save-button">Save</button>
+                <a asp-action="MyProfile" class="cancel-button">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .profile-header {
+        text-align: center;
+        padding: 30px 20px;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+    }
+
+        .profile-header h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .profile-field {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+    }
+
+        .form-input:focus {
+            border-color: #6a11cb;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(106, 17, 203, 0.1);
+        }
+
+    .text-danger {
+        color: #dc3545;
+        font-size: 14px;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .button-group {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .save-button {
+        background: #6a11cb;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: background 0.3s ease;
+    }
+
+    .cancel-button {
+        background: #6c757d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background 0.3s ease;
+    }
+
+    .save-button:hover {
+        background: #5a0fb0;
+    }
+
+    .cancel-button:hover {
+        background: #5a6268;
+    }
+
+    .alert {
+        padding: 15px;
+        margin: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    .alert-danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+    }
+
+        .alert-danger ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+</style>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

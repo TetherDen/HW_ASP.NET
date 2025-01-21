@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Group>
+
+@{
+    ViewData["Title"] = "Список групп";
+}
+
+<div class="container my-4">
+    <h2 class="text-center mb-4">Список групп</h2>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+
+    <!-- батн для перехода cr8 new group -->
+    <div class="text-left mb-4">
+        <a asp-action="CreateGroup" asp-controller="Teacher" class="btn btn-primary btn-lg">
+            Create New Group
+        </a>
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="GroupId">Выберите группу</label>
+        <select id="GroupId" name="GroupId" class="form-control" onchange="location = this.value;">
+            <option value="" disabled selected>Выберите группу</option>
+            @foreach (var group in Model)
+            {
+                <option value="@Url.Action("Details", "Group", new { id = group.Id })">@group.Name</option>
+            }
+        </select>
+    </div>
+
+    <h3 class="mt-4">Действия с группами</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Название группы</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var group in Model)
+            {
+                <tr>
+                    <td>@group.Name</td>
+                    <td>
+                        <!-- TODO Edit-->
+                        <a href="@Url.Action("Details", "Group", new { id = group.Id })" class="btn btn-info btn-sm">View</a>
+                        <a href="@Url.Action("Edit", "Group", new { id = group.Id })" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="@Url.Action("ManageStudents", "Group", new { groupId = group.Id })" class="btn btn-primary btn-sm">ManageStudents</a>
+                        <a href="@Url.Action("Delete", "Group", new { id = group.Id })" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this group?');">Delete</a>
+                        <a href="@Url.Action("ManageSubjects", "Group", new { groupId = group.Id })" class="btn btn-secondary btn-sm">Manage Subjects</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

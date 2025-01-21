@@ -1,0 +1,125 @@
+﻿@using HW_18_Student_Journal.ViewModel.HW_18_Student_Journal.ViewModel
+
+@model GroupDetailsViewModel
+@{
+    ViewData["Title"] = "Group Details";
+}
+
+<div class="container py-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">@Model.GroupName</h2>
+        </div>
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="info-card bg-light p-3 rounded">
+                        <h4 class="text-primary">Group Information</h4>
+                        <p class="mb-2"><strong>Group ID:</strong> @Model.GroupId</p>
+                        <p class="mb-0"><strong>Total Students:</strong> @Model.Students.Count</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="students-section">
+                <h3 class="text-primary mb-3">Students List</h3>
+                @if (Model.Students.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col" width="5%">#</th>
+                                    <th scope="col" width="45%">Name</th>
+                                    <th scope="col" width="50%">Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var student in Model.Students.Select((s, index) => new { Student = s, Index = index + 1 }))
+                                {
+                                    <tr>
+                                        <td>@student.Index</td>
+                                        <td>@student.Student.FirstName @student.Student.LastName</td>
+                                        <td>
+                                            <a asp-controller="Student"
+                                               asp-action="Details"
+                                               asp-route-id="@student.Student.Id"
+                                               class="text-decoration-none">@student.Student.Email</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-info" role="alert">
+                        <i class="bi bi-info-circle me-2"></i>No students are assigned to this group.
+                    </div>
+                }
+            </div>
+
+            <!-- Добавляем секцию для предметов -->
+            <div class="subjects-section mt-4">
+                <h3 class="text-primary mb-3">Subjects List</h3>
+                @if (Model.Subjects.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col" width="5%">#</th>
+                                    <th scope="col" width="45%">Subject Name</th>
+                                    <th scope="col" width="50%">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var subject in Model.Subjects.Select((s, index) => new { Subject = s, Index = index + 1 }))
+                                {
+                                    <tr>
+                                        <td>@subject.Index</td>
+                                        <td>@subject.Subject.Name</td>
+                                        <td>@subject.Subject.Description</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-info" role="alert">
+                        <i class="bi bi-info-circle me-2"></i>No subjects are assigned to this group.
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-controller="Group"
+               asp-action="Index"
+               class="btn btn-secondary">
+                <i class="bi bi-arrow-left me-2"></i>Back to Groups
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .info-card {
+        border-left: 4px solid #0d6efd;
+    }
+
+    .card {
+        border-radius: 8px;
+    }
+
+    .table th {
+        font-weight: 600;
+        color: #495057;
+    }
+
+    .table td {
+        vertical-align: middle;
+    }
+</style>

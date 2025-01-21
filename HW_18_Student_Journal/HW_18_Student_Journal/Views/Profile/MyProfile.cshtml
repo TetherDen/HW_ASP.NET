@@ -1,0 +1,151 @@
+﻿@using HW_18_Student_Journal.ViewModel
+@model ProfileViewModel
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert" id="success-alert">
+        <p>@TempData["SuccessMessage"]</p>
+    </div>
+}
+
+
+
+<div class="profile-container">
+    <div class="profile-header">
+        <img class="profile-avatar" src="~/img/123.jpg" alt="User Avatar">
+        <h2 class="profile-name">@Model.UserName</h2>
+        <p class="profile-email">@Model.Email</p>
+    </div>
+
+    <div class="profile-info">
+        <div class="profile-field">
+            <span class="field-label">First Name:</span>
+            <span class="field-value">@Model.FirstName</span>
+            <a asp-controller="Profile" asp-action="EditProfile" class="edit-button">Edit</a>
+        </div>
+        <div class="profile-field">
+            <span class="field-label">Last Name:</span>
+            <span class="field-value">@Model.LastName</span>
+            <a asp-controller="Profile" asp-action="EditProfile" class="edit-button">Edit</a>
+        </div>
+        <div class="profile-field">
+            <span class="field-label">Email:</span>
+            <span class="field-value">@Model.Email</span>
+            <a asp-controller="Profile" asp-action="EditProfile" class="edit-button">Edit</a>
+        </div>
+        <div class="profile-field">
+            <span class="field-label">Phone Number:</span>
+            <span class="field-value">@Model.PhoneNumber</span>
+            <a asp-controller="Profile" asp-action="EditProfile" class="edit-button">Edit</a>
+        </div>
+
+@*         <div class="profile-field">
+            <span class="field-label">Username:</span>
+            <span class="field-value">@Model.UserName</span>
+            <a asp-controller="Profile" asp-action="EditProfile" class="edit-button">Edit</a>
+        </div> *@
+
+    </div>
+</div>
+
+
+
+<style>
+    .alert {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .profile-header {
+        text-align: center;
+        padding: 30px 20px;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+    }
+
+    .profile-avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 4px solid white;
+        margin-bottom: 10px;
+    }
+
+    .profile-name {
+        margin: 10px 0 5px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .profile-email {
+        font-size: 16px;
+        opacity: 0.85;
+    }
+
+    .profile-info {
+        padding: 20px;
+    }
+
+    .profile-field {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .field-label {
+        font-size: 16px;
+        color: #555;
+        font-weight: 500;
+    }
+
+    .field-value {
+        font-size: 16px;
+        color: #333;
+    }
+
+    .edit-button {
+        background: none;
+        border: 1px solid #6a11cb;
+        border-radius: 4px;
+        padding: 5px 10px;
+        color: #6a11cb;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .edit-button:hover {
+            background-color: #6a11cb;
+            color: white;
+        }
+
+</style>
+
+
+
+<!-- Скрывает бутстрап алерт через заданное время -->
+<script>
+    var alertElement = document.getElementById('success-alert');
+    if (alertElement) {
+        setTimeout(function() {
+            alertElement.style.display = 'none';
+        }, 3000);
+    }
+</script>

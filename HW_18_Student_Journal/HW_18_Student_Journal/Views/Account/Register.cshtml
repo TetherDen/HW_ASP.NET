@@ -1,0 +1,61 @@
+﻿@using HW_18_Student_Journal.ViewModel
+@model RegisterViewModel
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-controller="Account" asp-action="Register" class="form">
+            <h2 class="title text-center">Registration</h2>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label">FirstName</label>
+                <input asp-for="FirstName" class="input form-control" placeholder="Enter first name" />
+                <div class="validation-container">
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label">LastName</label>
+                <input asp-for="LastName" class="input form-control" placeholder="Enter last name" />
+                <div class="validation-container">
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">E-mail</label>
+                <input asp-for="Email" class="input form-control" placeholder="Enter email" />
+                <div class="validation-container">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">Password</label>
+                <input asp-for="Password" class="input form-control" placeholder="Enter password" />
+                <div class="validation-container">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="control-label">Confirm password</label>
+                <input asp-for="ConfirmPassword" class="input form-control" placeholder="Confirm password" />
+                <div class="validation-container">
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Lets Go!" class="submit btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

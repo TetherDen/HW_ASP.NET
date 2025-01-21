@@ -1,0 +1,25 @@
+﻿@model Subject
+
+<h2>Edit Subject</h2>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button type="submit" class="btn btn-success">Save Changes</button>
+    </div>
+</form>
+
+<div>
+    <a href="@Url.Action("Index")" class="btn btn-secondary mt-3">Back to Subjects</a>
+</div>
