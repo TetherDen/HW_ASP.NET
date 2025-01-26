@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/HW_20_WebApi_Weather/index.2llxtqcnyh.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2llxtqcnyh"},{"Name":"integrity","Value":"sha256-hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM\u002ByKxaBNnEJM="},{"Name":"label","Value":"_content/HW_20_WebApi_Weather/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2842"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM\u002ByKxaBNnEJM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Jan 2025 17:03:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HW_20_WebApi_Weather/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM\u002ByKxaBNnEJM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2842"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM\u002ByKxaBNnEJM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 25 Jan 2025 17:03:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

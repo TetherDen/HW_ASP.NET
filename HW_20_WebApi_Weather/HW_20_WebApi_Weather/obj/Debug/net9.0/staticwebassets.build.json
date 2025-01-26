@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "Hash": "JgKq66t72svgvG7x9BKOWiNuq6T8AwsHUoQCUjO86sw=",
+  "Source": "HW_20_WebApi_Weather",
+  "BasePath": "_content/HW_20_WebApi_Weather",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "HW_20_WebApi_Weather\\wwwroot",
+      "Source": "HW_20_WebApi_Weather",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\wwwroot\\",
+      "BasePath": "_content/HW_20_WebApi_Weather",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\obj\\Debug\\net9.0\\compressed\\9jflvxlqr5-2llxtqcnyh.gz",
+      "SourceId": "HW_20_WebApi_Weather",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/HW_20_WebApi_Weather",
+      "RelativePath": "index#[.{fingerprint=2llxtqcnyh}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "v1f9tfosxw",
+      "Integrity": "cw3XK3DGx9w18+Q57DlKQqDB6vxnCsNfEwBTHpzOmC8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\wwwroot\\index.html",
+      "SourceId": "HW_20_WebApi_Weather",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\wwwroot\\",
+      "BasePath": "_content/HW_20_WebApi_Weather",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2llxtqcnyh",
+      "Integrity": "hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM+yKxaBNnEJM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.2llxtqcnyh.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\obj\\Debug\\net9.0\\compressed\\9jflvxlqr5-2llxtqcnyh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000935453695"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1068"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cw3XK3DGx9w18+Q57DlKQqDB6vxnCsNfEwBTHpzOmC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 25 Jan 2025 17:03:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM+yKxaBNnEJM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2llxtqcnyh"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM+yKxaBNnEJM="
+        }
+      ]
+    },
+    {
+      "Route": "index.2llxtqcnyh.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2842"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM+yKxaBNnEJM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 25 Jan 2025 17:03:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2llxtqcnyh"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM+yKxaBNnEJM="
+        }
+      ]
+    },
+    {
+      "Route": "index.2llxtqcnyh.html.gz",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\obj\\Debug\\net9.0\\compressed\\9jflvxlqr5-2llxtqcnyh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1068"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cw3XK3DGx9w18+Q57DlKQqDB6vxnCsNfEwBTHpzOmC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 25 Jan 2025 17:03:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2llxtqcnyh"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cw3XK3DGx9w18+Q57DlKQqDB6vxnCsNfEwBTHpzOmC8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\obj\\Debug\\net9.0\\compressed\\9jflvxlqr5-2llxtqcnyh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000935453695"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1068"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cw3XK3DGx9w18+Q57DlKQqDB6vxnCsNfEwBTHpzOmC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 25 Jan 2025 17:03:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM+yKxaBNnEJM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM+yKxaBNnEJM="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2842"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM+yKxaBNnEJM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 25 Jan 2025 17:03:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hlDG68pxm4s2Qjz90wtu8UnJwqP3UZkM+yKxaBNnEJM="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\admin\\source\\repos\\ASP.NET_Core_Dev\\HWs\\HW_20_WebApi_Weather\\HW_20_WebApi_Weather\\obj\\Debug\\net9.0\\compressed\\9jflvxlqr5-2llxtqcnyh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1068"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cw3XK3DGx9w18+Q57DlKQqDB6vxnCsNfEwBTHpzOmC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 25 Jan 2025 17:03:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cw3XK3DGx9w18+Q57DlKQqDB6vxnCsNfEwBTHpzOmC8="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .weather-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather in the City</h1>
+    <input type="text" id="city" placeholder="Enter city name" required>
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div id="weatherResult" class="weather-result"></div>
+
+    <script>
+        async function getWeather() {
+            const city = document.getElementById('city').value.trim();
+            const resultContainer = document.getElementById('weatherResult');
+            resultContainer.innerHTML = "";
+
+            if (!city) {
+                resultContainer.innerHTML = "<p>Please enter a city name!</p>";
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/weather?city=${city}`);
+                if (!response.ok) {
+                    resultContainer.innerHTML = "<p>Failed to fetch weather data. Please try again.</p>";
+                    return;
+                }
+
+                const data = await response.json();
+
+
+                resultContainer.innerHTML = `
+                        <h3>Погода в ${data.city}, ${data.country}</h3>
+                        <p>Температура: ${data.temperature} °C</p>
+                        <p>Ощущается как: ${data.feelsLike} °C</p>
+                        <p>Мин. температура: ${data.tempMin} °C</p>
+                        <p>Макс. температура: ${data.tempMax} °C</p>
+                        <p>Описание: ${data.description}</p>
+                        <p>Давление: ${data.pressure} гПа</p>
+                        <p>Влажность: ${data.humidity}%</p>
+                        <p>Скорость ветра: ${data.windSpeed} м/с</p>
+                        <p>Направление ветра: ${data.windDegree}°</p>
+                        <p>Облачность: ${data.cloudCoverage}%</p>
+                        <p>Видимость: ${data.visibility} метров</p>
+                        <p>Координаты: (${data.latitude}, ${data.longitude})</p>
+                        <p>Восход: ${data.sunrise}</p>
+                        <p>Закат: ${data.sunset}</p>
+                    `;
+            } catch (error) {
+                resultContainer.innerHTML = "<p>An error occurred while fetching weather data.</p>";
+            }
+        }
+    </script>
+</body>
+</html>

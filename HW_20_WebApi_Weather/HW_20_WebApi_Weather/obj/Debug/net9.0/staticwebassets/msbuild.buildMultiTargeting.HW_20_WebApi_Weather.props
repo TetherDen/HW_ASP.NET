@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HW_20_WebApi_Weather.props" />
+</Project>

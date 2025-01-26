@@ -1,0 +1,2 @@
+C:\Users\admin\source\repos\ASP.NET_Core_Dev\HWs\HW_20_WebApi_Weather\HW_20_WebApi_Weather\wwwroot\index.html
+wwwroot\index.html
