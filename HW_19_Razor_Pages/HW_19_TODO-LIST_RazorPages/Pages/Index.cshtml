@@ -7,10 +7,12 @@
     <div class="mb-3">
         <label for="Title" class="form-label">Title:</label>
         <input type="text" asp-for="TaskViewModel.Title" class="form-control" id="Title" />
+        <span asp-validation-for="TaskViewModel.Title" class="text-danger"></span>
     </div>
     <div class="mb-3">
         <label for="Description" class="form-label">Description:</label>
         <input type="text" asp-for="TaskViewModel.Description" class="form-control" id="Description" />
+        <span asp-validation-for="TaskViewModel.Description" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-primary">Add Task</button>
 </form>
