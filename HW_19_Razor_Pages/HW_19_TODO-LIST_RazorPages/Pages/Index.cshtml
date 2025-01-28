@@ -1,0 +1,100 @@
+﻿@page
+@model HW_19_TODO_LIST_RazorPages.Pages.IndexModel
+
+<h2 class="text-center mb-4">My New Task</h2>
+
+<form method="post" class="mb-4">
+    <div class="mb-3">
+        <label for="Title" class="form-label">Title:</label>
+        <input type="text" asp-for="TaskViewModel.Title" class="form-control" id="Title" />
+    </div>
+    <div class="mb-3">
+        <label for="Description" class="form-label">Description:</label>
+        <input type="text" asp-for="TaskViewModel.Description" class="form-control" id="Description" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add Task</button>
+</form>
+
+<h3 class="mb-3">Task List</h3>
+
+<div class="row">
+    @foreach (var task in Model.Tasks)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-decoration: @(task.IsCompleted ? "line-through" : "none")">
+                        @task.Title
+                    </h5>
+                    <p class="card-text" style="text-decoration: @(task.IsCompleted ? "line-through" : "none")">
+                        @task.Description
+                    </p>
+
+                    <!-- Toggle Completed Button -->
+                    <form method="post" asp-page-handler="ToggleCompleted" asp-route-id="@task.Id" style="display:inline;">
+                        <button type="submit" class="btn @(task.IsCompleted ? "btn-warning" : "btn-success")">
+                            @(task.IsCompleted ? "Mark as Incomplete" : "Mark as Complete")
+                        </button>
+                    </form>
+
+                    <!-- Edit Button -->
+                    <button class="btn btn-info ml-2" data-bs-toggle="modal" data-bs-target="#editTaskModal" data-id="@task.Id" data-title="@task.Title" data-description="@task.Description">
+                        Edit
+                    </button>
+
+                    <!-- Delete Button -->
+                    <form method="post" asp-page-handler="Delete" asp-route-id="@task.Id" style="display:inline;">
+                        <button type="submit" class="btn btn-danger ml-2">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- модальное всплывающее окно для апдеита заметки -->
+<div class="modal fade" id="editTaskModal" tabindex="-1" aria-labelledby="editTaskModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editTaskModalLabel">Edit Task</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" asp-page-handler="UpdateTask">
+                    <input type="hidden" id="TaskId" name="TaskId" />
+                    <div class="mb-3">
+                        <label for="TaskTitle" class="form-label">Title:</label>
+                        <input type="text" class="form-control" id="TaskTitle" name="Title" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="TaskDescription" class="form-label">Description:</label>
+                        <input type="text" class="form-control" id="TaskDescription" name="Description" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // JavaScript for populating the modal with task details
+        $('#editTaskModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Button that triggered the modal
+            var id = button.data('id');
+            var title = button.data('title');
+            var description = button.data('description');
+
+            var modal = $(this);
+            modal.find('.modal-body #TaskId').val(id);
+            modal.find('.modal-body #TaskTitle').val(title);
+            modal.find('.modal-body #TaskDescription').val(description);
+        });
+    </script>
+}
