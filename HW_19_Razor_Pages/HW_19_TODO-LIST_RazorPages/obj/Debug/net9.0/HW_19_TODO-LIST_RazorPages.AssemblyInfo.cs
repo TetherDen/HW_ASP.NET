@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HW_19_TODO-LIST_RazorPages")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9adef42957a160b0956b062b57ad40fe5ecd251")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29037354c8397a5b4fa4810ce7101c2e5f7f785d")]
 [assembly: System.Reflection.AssemblyProductAttribute("HW_19_TODO-LIST_RazorPages")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HW_19_TODO-LIST_RazorPages")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

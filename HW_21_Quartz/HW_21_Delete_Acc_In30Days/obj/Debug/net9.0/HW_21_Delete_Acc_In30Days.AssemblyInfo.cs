@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HW_21_Delete_Acc_In30Days")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d249c73cc63bbb262a1e29b02139fceade1ed0a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29037354c8397a5b4fa4810ce7101c2e5f7f785d")]
 [assembly: System.Reflection.AssemblyProductAttribute("HW_21_Delete_Acc_In30Days")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HW_21_Delete_Acc_In30Days")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

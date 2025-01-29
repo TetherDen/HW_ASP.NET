@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\HW_21_Unit_Tests.props" />
+</Project>
