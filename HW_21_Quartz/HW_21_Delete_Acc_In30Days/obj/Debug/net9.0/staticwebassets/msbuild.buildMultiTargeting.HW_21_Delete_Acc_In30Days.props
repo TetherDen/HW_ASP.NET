@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HW_21_Delete_Acc_In30Days.props" />
+</Project>
